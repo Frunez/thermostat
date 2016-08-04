@@ -1,29 +1,36 @@
 .page {
-  background-color: white;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+
+  border: 10px solid white;
+
 }
 .button {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-    background-color: white;
-    color: black;
-    border: 2px solid #4CAF50; /* Green */
+    background-color: #8297FF;
+    color: white;
+    border: 2px solid #8297FF; /* Green */
     border-radius: 8px;
     font-size: 14px;
 }
 
 .button:hover {
-    background-color: #4CAF50; /* Green */
+    background-color: black; /* Green */
     color: white;
-    color: black;
 
 }
 .head {
-  color: orange;
+  color: #8297FF;
   text-align: center;
 }
 
 #container {
   margin: 20px;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }

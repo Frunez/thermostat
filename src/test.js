@@ -22,3 +22,5 @@ $('#decrease_btn').click(function() {
   getTempDecimal();
   bar.animate(currentTemp);
 });
+
+$('#powerSavingMode')
