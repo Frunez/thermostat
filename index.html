@@ -4,31 +4,33 @@
     <link rel="stylesheet" href="thermostat.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css">
     <title>Thermostat</title>
   </head>
+  <section class="image"></section>
+  <div>
+    <h1>Thermostat</h1>
+  </div>
   <body>
     <section>
-      <h1>Current temperature: <span id="current-temperature"></span></h1>
+      <h2>Current temperature: <span id="current-temperature"></span></h2>
       <form id="select-city">
         <input id="current-city" type="text" placeholder="Enter a city"></input>
         <input type="submit" value="ok"></input>
       </form>
     </section>
     <section>
-      <h1 id="temperature"></h1>
+      <h2 id="temperature">20</h2>
       <p>
         <button id="temperature-up">+</button>
-        <br>
         <button id="temperature-down">-</button>
         <br>
-        <button id="temperature-reset">reset</button>
-        <br>
-        power saving mode is <span id="power-saving-status"></span>
-        <br>
+        <button id="temperature-reset">reset</button><br>
         <button id="powersaving-on">PSM on</button>
         <br>
         <button id="powersaving-off">PSM off</button>
       </p>
+      power saving mode is <span id="power-saving-status">on</span>
     </section>
     <script src="src/Thermostat.js"></script>
     <script src="interface.js"></script>

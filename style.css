@@ -1,0 +1,61 @@
+html {
+  font-family: sans-serif;
+}
+
+.image {
+  margin-top: 220px;
+  width: 38px;
+  height: 38px;
+  padding: 100px;
+  float: right;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/236x/81/15/80/81158000a68e8eaf5ec5a3b94e070487.jpg);
+}
+
+div {
+  float: left;
+  background-color: black;
+  width: 25px;
+  height: 250px;
+  padding: 100px;
+}
+
+#temperature {
+  font-size: 80px;
+}
+
+h1 {
+  float: left;
+  margin-top: 150px;
+  width: 50px;
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+p {
+  position: static;
+  margin-left: 25%;
+  color: black;
+  border: black;
+  border-width: thick;
+}
+
+button {
+  border-radius: 8px;
+  color: black;
+  border: transparent;
+  background-color: transparent;
+  font-size: 30;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+button:hover {
+
+  color: white;
+  background-color: darkred;
+}
