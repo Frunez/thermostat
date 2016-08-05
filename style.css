@@ -1,9 +1,44 @@
+html {
+  background-color: black;
+  color: white;
+  background:radial-gradient(ellipse at center, rgba(0,0,255,1) 10%, rgba(0,0,0,1) 75%);
+}
+
 .low {
+  font-weight: bold;
   background-color: green;
+  text-align: center;
 }
 .medium {
+  font-weight: bold;
   background-color: yellow;
+  text-align: center;
 }
 .high {
+  font-weight: bold;
   background-color: red;
+  text-align: center;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+
+  border-left: 60px solid green;
+}
+
+.button, input {
+  border-width: 0;
+  padding: 6px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  border-color: purple;
+  text-align: center;
+}
+
+button:hover {
+  background-color: orange;
 }

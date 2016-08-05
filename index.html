@@ -8,30 +8,38 @@
   <script src = "src/Thermostat.js"></script>
   <script src = "interface.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css-percentage-circle-master/css/circle.css">
 </head>
+
 
 <body>
 
   <section>
     <h4> Current temperature: <span id='current_temperature'> </span></h4><br>
     <form id='select-city'>
-      <input id='current-city' type="text" placeholder="Enter the city"></input>
+      <input class='text_input' id='current-city' type="text" placeholder="Enter the city"></input>
       <input type="submit"></input>
     </form>
   </section>
 
+  <div id='progress' class="c100 p62 center big dark medium">
+    <span id='circle'>25</span>
+    <div class="slice">
+      <div class="bar"></div>
+      <div class="fill"></div>
+    </div>
+  </div>
+
   <section>
     <h1> </h1>
 
-    <p id="temperature" class = 'medium'> 20 </p><br /><br />
+    <!-- <p id="temperature" class = 'medium'> 20 </p><br /><br /> -->
     <p>
-      <button id='london' >London</button>
-      <button id='italy' >Italy</button>
-      <button id="temp_up">+</button>
-      <button id="temp_down">-</button>
-      <button id="temp_reset">reset</button>
-      <button id="powersave_on">powersave on</button>
-      <button id="powersave_off">powersave off</button>
+      <button class="arrow-right" id="temp_up">+</button>
+      <button class="button" id="temp_down">-</button>
+      <button  id="temp_reset">reset</button>
+      <button  id="powersave_on">powersave on</button>
+      <button  id="powersave_off">powersave off</button>
       powersave status:<span id="power_save_status"> on </span>
     </p>
   </section>

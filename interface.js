@@ -1,19 +1,36 @@
 $(document).ready(function() {
   var thermostat = new Thermostat();
 
+  function tempPercent() {
+    var size = "c100 p";
+    var temp = thermostat.getTemperature() / 32 * 100;
+    var percent = Math.round(temp).toString();
+    var settings = " center big dark "
+    var color = thermostat.energyUseReporter();
+    $('#progress').attr('class', size + percent + settings + color);
+  };
+
+  $('#circle').text(thermostat.getTemperature())
+
   $('#temp_up').click(function() {
     thermostat.up();
-    updateTemperature();
+    // updateTemperature();
+    tempPercent();
+    $('#circle').text(thermostat.getTemperature())
   });
 
   $('#temp_down').click(function() {
     thermostat.down();
-    updateTemperature();
+    // updateTemperature();
+    tempPercent();
+    $('#circle').text(thermostat.getTemperature())
   });
 
   $('#temp_reset').click(function() {
     thermostat.reset();
-    updateTemperature();
+    // updateTemperature();
+    tempPercent();
+    $('#circle').text(thermostat.getTemperature())
   });
 
   $('#powersave_on').click(function(event) {
@@ -26,10 +43,10 @@ $(document).ready(function() {
     $("#power_save_status").text(" off");
   });
 
-  function updateTemperature(){
-    $('#temperature').text(thermostat.getTemperature());
-    $('#temperature').attr('class', thermostat.energyUseReporter());
-  };
+  // function updateTemperature(){
+  //   $('#temperature').text(thermostat.getTemperature());
+  //   $('#temperature').attr('class', thermostat.energyUseReporter());
+  // };
 
   function displayWeather(city) {
      var url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city;
