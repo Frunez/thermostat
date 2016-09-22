@@ -1,0 +1,36 @@
+.page {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+
+  border: 10px solid white;
+
+}
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: #8297FF;
+    color: white;
+    border: 2px solid #8297FF; /* Green */
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: black; /* Green */
+    color: white;
+
+}
+.head {
+  color: #8297FF;
+  text-align: center;
+}
+
+#container {
+  margin: 20px;
+  width: 150px;
+  height: 150px;display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
