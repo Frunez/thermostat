@@ -1,11 +1,19 @@
 .low-usage {
-  color: green;
+  color: lightblue;
 }
 
 .medium-usage {
-  color: black;
+  color: darkorange;
 }
 
 .high-usage {
-  color: red;
+  color: darkred;
+}
+
+.psm-on {
+  color: darkgreen;
+}
+
+.psm-off {
+  color: grey;
 }

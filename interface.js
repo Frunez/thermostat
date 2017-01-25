@@ -24,13 +24,13 @@ $(document).ready(function(){
 
   $('#powersaving-on').click(function(){
     thermostat.switchPowerSavingModeOn();
-    $('#power-saving-status').text('on')
+    $('#power-saving-status').attr('class', 'psm-on')
     updateTemperature();
   });
 
   $('#powersaving-off').click(function(){
     thermostat.switchPowerSavingModeOff();
-    $('#power-saving-status').text('off')
+    $('#power-saving-status').attr('class', 'psm-off')
     updateTemperature();
   });
 

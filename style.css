@@ -1,31 +1,46 @@
-html {
-}
-
 body {
   font-family: arial;
   margin: auto;
-}
-
-@media screen and (min-width: 480px) {
-  body {
-    margin: auto;
-    width: 50%;
-    height: 100%;
-  }
-}
-
-.side {
-  background-color: black;
-  position: relative;
-  font-family: arial;
-  color: white;
-  background-color: black;
-  float: left;
-  width: 100%;
   height: 100%;
 }
 
+.main {
+  position: relative;
+  font-family: arial;
+  color: white;
+  float: left;
+  width: 100%;
+  height: 550px;
+  background-color: rgb(25, 25, 30);
+  border-radius: 20px;
+}
 
+@media screen and (min-width: 1280px) {
+  body {
+    width: 33%;
+  }
+  .main {
+    margin-top: 25%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    width: 50%;
+  }
+  .main {
+    margin-top: 25%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    width: 100%;
+  }
+  .main {
+    margin-top: 0%;
+  }
+}
 
 
 .form {
@@ -46,7 +61,6 @@ body {
 
 .title-container {
   height: 400px;
-  z-index: 10;
 }
 
 .title {
@@ -71,47 +85,12 @@ body {
 }
 
 .control {
-  height: 400px;
+  color: grey;
   padding-top: 100px;
   float: left;
   margin: auto;
   text-align: center;
-  background-color: black;
-  z-index: -2;
-}
-
-#temperature {
-  color: white;
-  border-radius: 300px;
-  font-family: Helvetica;
-  padding: 15px;
-  font-size: 50px;
-  background-color: black;
   z-index: 1;
-}
-
-.btn {
-  border-radius: 8px;
-  height: 25px;
-  color: white;
-  border: transparent;
-  background-color: black;
-  font-size: 30;
-  font-weight: bolder;
-  font-family: sans-serif;
-  margin: 2px;
-}
-
-.btn:hover {
-  color: white;
-  background-color: darkred;
-}
-
-.arrow {
-  background-color: black;
-  width: 0px;
-  height: 0px;
-  z-index: -1;
 }
 
 .plus {
@@ -138,4 +117,41 @@ body {
 .minus:hover {
   border-right: 30px solid blue;
   transition: 0.5s;
+}
+
+.arrow {
+  background-color: rgb(25, 25, 30);
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+#temperature {
+  border-radius: 300px;
+  font-family: Helvetica;
+  padding: 15px;
+  font-size: 50px;
+  background-color: rgb(25, 25, 30);
+  z-index: 2;
+}
+
+.btn {
+  color: grey;
+  border-radius: 8px;
+  height: 25px;
+  border: transparent;
+  background-color: rgb(25, 25, 30);
+  font-size: 30;
+  font-weight: bolder;
+  font-family: sans-serif;
+  margin: 2px;
+}
+
+.btn:hover {
+  color: white;
+  background-color: darkred;
+}
+
+.psm {
+  font-size: 40px;
 }
