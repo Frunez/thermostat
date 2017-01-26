@@ -15,6 +15,6 @@ Main
 
 Extras
 * Power saver notifier, leaf is green when on.
-* Hold click to increase or decrease temperature at steady linear rate.
+* Click and hold to increase or decrease temperature at steady linear rate.
 * Fancy CSS transitions and animations for buttons.
 * Temperature value changes colour depending on low (< 18) or high (> 25).
