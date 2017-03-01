@@ -1,0 +1,27 @@
+{
+  "name": "thermoleaf",
+  "version": "1.0.0",
+  "description": "A thermostat with cool features",
+  "main": "interface.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frunez/thermostat.git"
+  },
+  "keywords": [
+    "thermostat",
+    "heroku",
+    "API"
+  ],
+  "author": "Franceesco Nunez Alessi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Frunez/thermostat/issues"
+  },
+  "homepage": "https://github.com/Frunez/thermostat#readme",
+  "engines":{
+    "node": "6.10.0"
+  }
+}
